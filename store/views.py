@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.http import JsonResponse
 from django.contrib import messages
 from django.contrib.auth import authenticate, login, logout
@@ -53,7 +53,6 @@ def store(request):
 	products = Product.objects.all()
 	context = {'products':products, 'cartItems':cartItems}
 	return render(request, 'store/store.html', context)
-
 
 def cart(request):
 	data = cartData(request)
@@ -128,3 +127,10 @@ def processOrder(request):
 		)
 
 	return JsonResponse('Payment submitted..', safe=False)
+
+
+def product_detailview(request, p_id):
+	data = cartData(request)
+	cartItems = data['cartItems']
+	product_detail = get_object_or_404(Product, pk=p_id)
+	return render(request, 'store/product_detail.html', {'product':product_detail, 'cartItems':cartItems})

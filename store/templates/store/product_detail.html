@@ -1,0 +1,38 @@
+{% extends 'store/main.html' %}
+{% load static %}
+
+{% block content %}
+<style>
+    .wrapper{
+        display: grid;
+        grid-template-columns: 60% 40%;
+    }
+    .wrapper > div {
+        background: #fff;
+        padding: 1em;
+    }
+
+</style>
+
+<body>
+    <div class="wrapper">
+
+        <div>
+            <img src="{{product.imageURL}}">
+        </div>
+
+        <div>
+            <h4><strong>${{product.price}}</strong></h4>
+            <button data-product="{{product.id}}" data-action="add" class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+            <br><br>
+            <h6><strong>{{product.name}}</strong></h6>
+            <br>
+            <p>{{product.details}}</p>
+            <br>
+            <br>           
+            <a  class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Continue Shopping</a>
+        </div>
+
+    </div>
+</body> 
+    {% endblock content %}
