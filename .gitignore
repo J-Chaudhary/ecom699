@@ -1,3 +1,5 @@
 .idea
 .vscode
 venv
+README.MD
+db.sqlite3
