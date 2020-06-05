@@ -1,0 +1,6 @@
+.idea
+.vscode
+README.MD
+db.sqlite3
+__pycache__
+/venv/
