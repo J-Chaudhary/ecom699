@@ -1,5 +1,6 @@
 .idea
 .vscode
-venv
+/venv/
 README.MD
 db.sqlite3
+__pycache__
