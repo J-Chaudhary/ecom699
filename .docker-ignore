@@ -1,7 +1,0 @@
-venv
-*/*.sqlite2
-*.yml
-*.md
-.gitignore
-*.git
-.idea
