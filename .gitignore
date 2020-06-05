@@ -1,6 +1,0 @@
-.idea
-.vscode
-/venv/
-README.MD
-db.sqlite3
-__pycache__
