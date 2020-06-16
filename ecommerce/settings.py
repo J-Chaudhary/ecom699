@@ -73,9 +73,9 @@ DATABASES = {
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.postgresql',
-#         'NAME': 'db',
+#         'NAME': 'ecomdb',
 #         'USER': 'postgres',
-#         'PASSWORD': 'Veer@9408',
+#         'PASSWORD': '**********',
 #         'HOST': 'localhost',
 #         'PORT': '5432',
 #     }

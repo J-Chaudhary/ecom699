@@ -1,0 +1,7 @@
+/venv/
+.gitignore
+db.sqlite
+README.MD
+.idea
+__pycache__
+pyenv.cfg
